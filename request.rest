@@ -1,0 +1,43 @@
+GET http://127.0.0.1:5000/
+
+###
+
+GET http://127.0.0.1:5000/data/Juan
+
+###
+
+GET http://127.0.0.1:5000/user
+
+###
+
+POST http://127.0.0.1:5000/user
+Content-Type: application/json
+
+{
+  "name": "juan",
+  "username": 1,
+  "email": "juan",
+  "password": "1234"
+}
+
+###
+
+GET http://127.0.0.1:5000/user_test
+
+###
+
+GET http://127.0.0.1:5000/user_test/1
+
+###
+
+POST http://127.0.0.1:5000/user_test
+Content-Type: application/json
+
+{
+  "name": "juan",
+  "username": "juan123",
+  "email": "juan@example.com",
+  "password": "1234"
+}
+
+
