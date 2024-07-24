@@ -36,9 +36,11 @@ def get_data(name: str):
 # Definiendo las rutas de la API
 import routes.user_route as user_route
 import routes.user_test_route as user_test_route
+import routes.auth_route as auth_route
 
 app.register_blueprint(user_route.user_bp)
 app.register_blueprint(user_test_route.user_bp)
+app.register_blueprint(auth_route.auth_bp)
 
 # Manejador de error para "Not Found"
 @app.errorhandler(404)

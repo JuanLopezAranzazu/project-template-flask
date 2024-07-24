@@ -15,4 +15,4 @@ COPY . .
 EXPOSE 5000
 
 # Establece el comando predeterminado para ejecutar la aplicación
-CMD ["python", "./src/main.py"]
+CMD ["python", "./app/main.py"]
